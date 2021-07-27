@@ -1,10 +1,10 @@
 exports.mysqlConnect = () => {
-  const mysql = require("mysql1")
+  const mysql = require("mysql1");
 
     const con = mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "",
+        password: ""
     });
 
     con.connect((err) => {
