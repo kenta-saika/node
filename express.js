@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const Hello = require("./HelloWorld");
-// const { mysql } = require("./mysql");
 const mysql = require("./mysql");
 
 //URL分岐

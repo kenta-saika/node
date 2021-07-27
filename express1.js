@@ -1,7 +1,7 @@
 const express = require(`express`);
 const app = express();
 const Hello = require("./HelloWorld1");
-const mysql = require("./mysql1")
+const mysql = require("./mysql1");
 
 app.get("/", (req, res) => {
     Hello.Hello(req, res);

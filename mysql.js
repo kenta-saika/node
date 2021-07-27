@@ -7,7 +7,7 @@ exports.mysqlConnect = () => {
         password: ""
     });
 
-    con.connect((err) => {
+     con.connect((err) => {
         if(err) throw err;
         console.log(`Connented!`);
 
