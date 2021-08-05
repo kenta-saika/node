@@ -12,27 +12,58 @@
 // while (new Date().getTime() < start + 1000 );
 // console.log("World");
 
+// const http = require("http");
+// const app = http.createServer();
+// let msg;
+
+// app.on("request", (req, res) => {
+//     switch (req.url) {
+//         case "/api/v1":
+//             msg = "api1"
+//             break;
+//         case "/api/v2":
+//             msg = "api2"
+//             break;
+//         default:
+//             msg = "404 not found";
+//             break;
+//     }
+
+//     res.writeHead(200, {"Content-Type":"text/plain"});
+//     // res.write("Hello World!");
+//     res.write(msg);
+//     res.end();
+// });
+// app.listen(1337, "localhost");
+// console.log("server listening ...");
+
 const http = require("http");
 const app = http.createServer();
 let msg;
 
-app.on("request", (req, res) => {
-    switch (req.url) {
+app.on("request", (req, res) =>{
+    switch (req,url) {
         case "/api/v1":
-            msg = "api1"
+            msg = "apiサーバー2";
             break;
-        case "/api/v2":
-            msg = "api2"
-            break;
-        default:
-            msg = "404 not found";
-            break;
+        case
     }
 
-    res.writeHead(200, {"Content-Type":"text/plain"});
-    // res.write("Hello World!");
-    res.write(msg);
+    res.writeHead(200, {"Content-Type": "text/plain"});
+    res.write("Hello World");
     res.end();
 });
+
 app.listen(1337, "localhost");
-console.log("server listening ...");
+console.log("server listen ...");
+
+
+
+
+
+
+
+
+
+
+
