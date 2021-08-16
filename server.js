@@ -37,25 +37,7 @@
 // app.listen(1337, "localhost");
 // console.log("server listening ...");
 
-const http = require("http");
-const app = http.createServer();
-let msg;
 
-app.on("request", (req, res) =>{
-    switch (req,url) {
-        case "/api/v1":
-            msg = "apiサーバー2";
-            break;
-        case
-    }
-
-    res.writeHead(200, {"Content-Type": "text/plain"});
-    res.write("Hello World");
-    res.end();
-});
-
-app.listen(1337, "localhost");
-console.log("server listen ...");
 
 
 
